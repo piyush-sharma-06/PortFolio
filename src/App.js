@@ -3,11 +3,13 @@ import Home from './routes/Home';
 import About from './routes/About';
 import ContactMe from './routes/ContactMe';
 import Project from './routes/Project';
+import Navbar from './components/Navbar';
 
 
 function App() {
   return (
-    <div className="App">
+    <div className="App overflow-x-hidden">
+      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<ContactMe />} />
