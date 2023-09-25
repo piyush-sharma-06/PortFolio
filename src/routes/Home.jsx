@@ -1,9 +1,10 @@
 import React from "react";
+import HeroImage from "../components/HeroImage";
 
 function Home(){
     return (
         <>
-        <div>home</div>
+        <HeroImage />
         </>
     );
 }

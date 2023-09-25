@@ -8,35 +8,35 @@ function Navbar() {
     function handleSideBarOpen() {
         setOpenBar(!openBar);
     }
-    function closeSideBar(){
+    function closeSideBar() {
         setOpenBar(!openBar);
     }
 
 
     return (
         <>
-            <div className="bg-cyan-500 p-3 flex justify-between items-center">
+            <div className="bg-gray-700 p-3 flex justify-between items-center">
                 <div className="text-3xl sm:text-4xl text-white font-semibold">
                     <Link to="/">Portfolio.</Link>
                 </div>
-                <ul className="hidden md:flex gap-5 text-white text-lg font-semibold">
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/project">Projects</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
+                <ul className="hidden md:flex gap-10 text-white text-lg font-semibold">
+                    <li className="hover:text-yellow-400 hover:scale-125 duration-500"><Link to="/">Home</Link></li>
+                    <li className="hover:text-yellow-400 hover:scale-125 duration-500"><Link to="/about">About</Link></li>
+                    <li className="hover:text-yellow-400 hover:scale-125 duration-500"><Link to="/project">Projects</Link></li>
+                    <li className="hover:text-yellow-400 hover:scale-125 duration-500"><Link to="/contact">Contact</Link></li>
                 </ul>
 
-                <button onClick={handleSideBarOpen} className="md:hidden text-xl">
+                <button onClick={handleSideBarOpen} className="md:hidden text-xl text-white">
                     {!openBar ? <FaBars /> : <AiOutlineClose />}
                 </button>
 
             </div>
-            <div className={`fixed bg-black transition-all duration-500 ${!openBar?"translate-x-full":"translate-x-0"}`}>
-            <ul className="text-white flex flex-col h-screen w-screen justify-center items-center  gap-10 text-2xl font-semibold">
+            <div className={`fixed bg-black transition-all duration-500 ${!openBar ? "translate-x-full" : "translate-x-0"}`}>
+                <ul className="text-white flex flex-col h-screen w-screen justify-center items-center  gap-10 text-2xl font-semibold">
                     <li><Link onClick={closeSideBar} className="p-2 hover:bg-cyan-500 hover:text-black rounded-md" to="/">Home</Link></li>
-                    <li><Link  onClick={closeSideBar}  className="p-2 hover:bg-cyan-500 hover:text-black rounded-md" to="/about">About</Link></li>
-                    <li><Link  onClick={closeSideBar}  className="p-2 hover:bg-cyan-500 hover:text-black rounded-md" to="/project">Projects</Link></li>
-                    <li><Link  onClick={closeSideBar}  className="p-2 hover:bg-cyan-500 hover:text-black rounded-md" to="/contact">Contact</Link></li>
+                    <li><Link onClick={closeSideBar} className="p-2 hover:bg-cyan-500 hover:text-black rounded-md" to="/about">About</Link></li>
+                    <li><Link onClick={closeSideBar} className="p-2 hover:bg-cyan-500 hover:text-black rounded-md" to="/project">Projects</Link></li>
+                    <li><Link onClick={closeSideBar} className="p-2 hover:bg-cyan-500 hover:text-black rounded-md" to="/contact">Contact</Link></li>
                 </ul>
             </div>
         </>
