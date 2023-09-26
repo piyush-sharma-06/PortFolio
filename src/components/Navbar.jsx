@@ -16,7 +16,7 @@ function Navbar() {
     return (
         <>
             <div className="bg-gray-700 p-3 flex justify-between items-center">
-                <div className="text-3xl sm:text-4xl text-white font-semibold">
+                <div className="text-3xl sm:text-4xl text-white hover:text-yellow-400 font-semibold">
                     <Link to="/">Portfolio.</Link>
                 </div>
                 <ul className="hidden md:flex gap-10 text-white text-lg font-semibold">
@@ -26,7 +26,7 @@ function Navbar() {
                     <li className="hover:text-yellow-400 hover:scale-125 duration-500"><Link to="/contact">Contact</Link></li>
                 </ul>
 
-                <button onClick={handleSideBarOpen} className="md:hidden text-xl text-white">
+                <button onClick={handleSideBarOpen} className="md:hidden text-xl hover:text-yellow-400 text-white">
                     {!openBar ? <FaBars /> : <AiOutlineClose />}
                 </button>
 

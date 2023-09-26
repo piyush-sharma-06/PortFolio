@@ -9,7 +9,7 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <div className="App overflow-x-hidden">
-      <Navbar />
+      <div className=''><Navbar /></div>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<ContactMe />} />
