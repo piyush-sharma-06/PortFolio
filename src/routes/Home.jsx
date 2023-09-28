@@ -1,12 +1,14 @@
 import React from "react";
 import HeroImage from "../components/HeroImage";
-import Footer from "../components/Footer";
+
+import ShowProject from "../components/ShowProject"
 
 function Home(){
     return (
         <>
         <HeroImage />
-        <Footer />
+        <ShowProject />
+        
         
         </>
     );
