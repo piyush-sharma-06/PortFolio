@@ -19,7 +19,7 @@ function Navbar() {
                 <div className="text-3xl sm:text-4xl text-white hover:text-yellow-400 font-semibold">
                     <Link to="/">Portfolio.</Link>
                 </div>
-                <ul className="hidden md:flex gap-10 text-white text-lg font-semibold">
+                <ul className="hidden md:flex gap-10 text-white text-xl font-semibold">
                     <li className="hover:text-yellow-400 hover:scale-125 duration-500"><Link to="/">Home</Link></li>
                     <li className="hover:text-yellow-400 hover:scale-125 duration-500"><Link to="/about">About</Link></li>
                     <li className="hover:text-yellow-400 hover:scale-125 duration-500"><Link to="/project">Projects</Link></li>

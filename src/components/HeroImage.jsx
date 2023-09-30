@@ -8,9 +8,9 @@ function HeroImage() {
             <div className="text-white" style={{
                 background: "linear-gradient(90deg, rgba(131, 126, 226, 1) 24%, rgba(114, 114, 226, 1) 58%, rgba(0, 212, 255, 1) 100%)"
             }}>
-                <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-                    <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10" alt="hero" src={Image} />
-                    <div class="text-center lg:w-5/12 w-full">
+                <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+                    <img className="lg:w-2/6 md:w-3/6 w-5/6 mb-10" alt="hero" src={Image} />
+                    <div className="text-center lg:w-5/12 w-full">
                         <h1 className="text-3xl my-4 md:text-5xl font-bold">
                         👋 Hey There 👋
                         </h1>
