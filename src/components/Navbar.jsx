@@ -15,7 +15,7 @@ function Navbar() {
 
     return (
         <>
-            <div className="bg-gray-700 p-3 flex justify-between items-center">
+            <div className="sticky  bg-gray-700 p-3 flex justify-between items-center">
                 <div className="text-3xl sm:text-4xl text-white hover:text-yellow-400 font-semibold">
                     <Link to="/">Portfolio.</Link>
                 </div>

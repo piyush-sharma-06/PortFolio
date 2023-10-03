@@ -1,7 +1,18 @@
-import React from "react";
+import React,{useState} from "react";
 import pic from "../assets/profileofmine.jpg";
+import Loading from "../components/Loading";
 
 function About(){
+    const [load , setLoad] = useState(true);
+    
+    setTimeout(function(){
+        return setLoad(false);
+    },1000);
+
+    if(load){
+        return <Loading />
+    }
+
     return (
         <>
         <div className="bg-gray-300 flex justify-center">

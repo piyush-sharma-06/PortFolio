@@ -5,6 +5,7 @@ import ContactMe from './routes/ContactMe';
 import Project from './routes/Project';
 import Navbar from './components/Navbar';
 import Footer from "./components/Footer";
+import GoToTop from './components/GoToTop';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/project' element={<Project />} />
       </Routes>
+      <GoToTop />
       <Footer />
     </div>
   );
